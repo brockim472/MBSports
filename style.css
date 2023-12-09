@@ -13,32 +13,39 @@ body, h1, h2, h3, p, ul, ol, li {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 5px;
+    padding: 10px;
   }
   
   header p {
-    font-size: 24px;
-    font-weight: bold;
+    margin: 0;
   }
   
   header img {
-    max-width: 250px; /* Adjust the width as needed */
-    height: 100px;
-    float: right; /* Float the image to the right */
-    margin: 0px; /* Add some margin for spacing */
-    
+    max-width: 100px; /* Adjust the max-width as needed */
+    margin-top: 10px; /* Add margin for spacing */
   }
   
   nav {
-    text-align: center;
-    margin-top: 10px;
+    margin-top: 10px; /* Add margin for spacing */
+  }
+  
+  nav ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    display: inline;
+    margin-right: 20px; /* Add margin between navigation items */
   }
   
   nav a {
     text-decoration: none;
     color: #fff;
-    margin: 0 10px;
+    font-weight: bold;
   }
+  
   
   main {
     padding: 20px;
@@ -103,6 +110,113 @@ div.Recaps > div + div {
   line-height: 1.5;
 }
 
+div.left-side, div.right-side {
+  width: 50%;
+  float: left;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Style list items within the left and right score containers */
+div.left-side li, div.right-side li {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Style even and odd list items with different background colors */
+div.left-scores li:nth-child(even), div.right-scores li:nth-child(even) {
+  background-color: #e0e0e0;
+
+}
+
+.mvp-race,
+.heisman-race {
+  flex: 1;
+  max-width: 600px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto; /* Adjust the margin to center the sections */
+}
+
+.mvp-race h2,
+.heisman-race h2 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.mvp-race p,
+.heisman-race p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+div.CFB-Left, div.CFB-Right {
+  width: 50%;
+  float: left;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Style list items within the left and right score containers */
+div.CFB-Left li, div.CFB-Right li {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Style even and odd list items with different background colors */
+div.CFB-Left li:nth-child(even), div.CFB-Right li:nth-child(even) {
+  background-color: #e0e0e0;
+
+}
 
 
-  
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.mvp-race img,
+.heisman-race img {
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.mvp-race img:hover,
+.heisman-race img:hover {
+  transform: scale(1.1);
+}
+
+
+div.CFB-Recap {
+  margin-top: 20px;
+  text-align: left;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  right: 0;
+}
+
+div.CFB-Recap1 {
+  margin-top: 20px;
+  text-align: left;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  right: 0;
+}
+

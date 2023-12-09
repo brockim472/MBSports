@@ -1,63 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>MB Sports Recap - Contact Page</title>
-        <meta charset= "UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="MB Sports Recap - Your source for NFL and CFB scores and summaries.">
-        <meta name="keywords" content="NFL, CFB, scores, summaries, sports recap">
-        <meta name="author" content="Mason Brockinton">
+<head>
+    <title>MB Sports Recap - Contact Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MB Sports Recap - Your source for NFL and CFB scores and summaries.">
+    <meta name="keywords" content="NFL, CFB, scores, summaries, sports recap">
+    <meta name="author" content="Mason Brockinton">
 
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
 
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-TTVKY58ZH3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
 
-  gtag('config', 'G-TTVKY58ZH3');
-</script>
+        header p {
+            margin: 0;
+            font-size: 24px;
+        }
 
-    </head>
+        header img {
+            max-width: 100px;
+            margin-top: 10px;
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+
+        nav ol {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form div {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TTVKY58ZH3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-TTVKY58ZH3');
+    </script>
+</head>
 <body>
     <header>
         <p>MB Sports Recap</p>
-       
-        <img src="images/MB Logo.jpg">
-
-       
+        <img src="images/MB Logo.jpg" alt="MB Logo">
         <nav>
             <ol>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="nfl.html">NFL Scores and Summaries</a></li>
-            <li><a href="contact.html">Contact Page</a></li>
-                </ol>
-
+                <li><a href="index.html">Home</a></li>
+                <li><a href="nfl.html">NFL Scores and Summaries</a></li>
+                <li><a href="CFB.html">CFB Scores and Summaries</a></li>
+                <li><a href="contact.html">Contact Page</a></li>
+            </ol>
         </nav>
+    </header>
+    <form action="/submit" method="post">
         <div>
             <label for="fullName">Full name:</label>
-            <input type="text" Id="fullName" name="fullName" required>
-         </div>
-         <div>
+            <input type="text" id="fullName" name="fullName" required>
+        </div>
+        <div>
             <label for="email">Email address:</label>
-            <input type="text" Id="email" name="email" required>
-         </div>
-         <div>
+            <input type="text" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="suggestions">Suggestions:</label>
+            <input type="text" id="suggestions" name="suggestions" required>
+        </div>
+        <div>
             <input type="submit" value="Submit">
-         </div>
+        </div>
+    </form>
 
-    </header>
     <main>
-
-
-
-
-
-
-
-
-
-
-
-        
+        <!-- Your main content goes here -->
     </main>
+
+    <footer>
+        <p>&copy; 2023 MB Sports Recap. All rights reserved.</p>
+    </footer>
+</body>
+</html>
