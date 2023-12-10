@@ -220,3 +220,86 @@ div.CFB-Recap1 {
   right: 0;
 }
 
+.MVP-Stats {
+  flex: 1;
+  max-width: 300px;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 30px auto; /* Adjust the margin to center the sections */
+  position:absolute; 
+  left:10px;
+  top:500px;
+  height:200px;
+  text-align: center;
+  
+}
+
+.MVP-Stats h2 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.CFB-Stats {
+  flex: 1;
+  max-width: 300px;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 30px auto; /* Adjust the margin to center the sections */
+  position:absolute; 
+  left:10px;
+  top:1100px;
+  height:200px;
+  text-align: center;
+  
+}
+
+.CFB-Stats h2 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.power-rank {
+  flex: 1;
+  max-width: 300px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 30px auto; /* Adjust the margin to center the sections */
+  position:absolute; 
+  left:1035px;
+  top:500px;
+  height:150px;
+  text-align: center;
+  
+}
+
+.power-rank h2 {
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.ranks {
+  flex: 1;
+  width: 175px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 30px auto; /* Adjust the margin to center the sections */
+  position:absolute; 
+  left:1035px;
+  top:1100px;
+  height:150px;
+  text-align: center;
+  
+}
+
+.ranks h2 {
+  color: #333;
+  margin-bottom: 5px;
+}
